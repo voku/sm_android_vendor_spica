@@ -4,7 +4,7 @@ from optparse import OptionParser
 
 FILENAME=["gapps-hdpi-20101114-signed.zip","gapps-mdpi-20110501-signed.zip","gapps-mdpi-tiny-20101020-signed.zip"]
 VERSIONS=["hdpi","mdpi","mdpi-tiny"]
-MIRRORS=["http://android.d3xt3r01.tk/cyanogen/gapps/"]
+MIRRORS=["http://cmw.22aaf3.com/gapps/"]
 
 def device():
     print "usage: get-google-files -m [method] -v [version]"
