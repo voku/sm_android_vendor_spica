@@ -13,7 +13,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83G BUILD_DISPLAY_ID=FRG83G PRODUCT_
 PRIVATE_BUILD_DESC="spica-user 2.2.2 FRG83G SM-froyo"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SpicagenMod-froyo-BETA2
+    ro.modversion=SpicagenMod-froyo-BETA3
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
@@ -32,6 +32,9 @@ TINY_TOOLBOX:=true
 WITH_WINDOWS_MEDIA:=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.enable.managed.roaming=1 \
+    ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995,113,115,1530,1522 \
+    ro.ril.emc.mode=2 \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.google.clientidbase=android-google \
@@ -56,11 +59,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.supplicant_scan_interval=90
 
 PRODUCT_PACKAGES += \
-    ADWLauncher \
+    Launcher2 \
     DownloadProviderUi \
     DSPManager \
-    FileManager \
-    GenKiller \
     openvpn \
     SMParts \
     SMPartsHelper \
